@@ -1,1 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Showcase</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <div class="navbar">
+            <div class="logo">254 Movie</div>
+            <a href="#home">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <div class="search-container">
+                <input type="text" placeholder="Search..." id="searchInput">
+                <button onclick="searchMovies()">Search</button>
+            </div>
+            <a href="#" onclick="toggleModal('registerForm')">Register</a>
+            <a href="#" onclick="toggleModal('profileDisplay')">Profile</a>
+        </div>
+    </header>
 
+    <!-- Main Content -->
+    <main>
+
+        <!-- Featured Movies Section -->
+<div class="featured-movies">
+    <h2>Featured Movies</h2>
+    <div id="moviesContainer" class="movies-container">
+        <!-- Movie items will be inserted here dynamically -->
+    </div>
+</div>
+
+
+    <!-- Call to Action Section -->
+    <div class="cta-section">
+        <h2>Join Our Community!</h2>
+        <p>Sign up today and start enjoying exclusive benefits.</p>
+        <button id="ctaButton" class="cta-button">Sign Up Now</button>
+    </div>
+
+
+        <!-- Social Sharing Section -->
+       
+<div class="social-sharing">
+    <h3>Share this:</h3>
+    
+    <div class="social-icons">
+        <a href="#" class="social-icon" id="facebook-share"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon" id="Youtube-share"><i class="fab fa-Youyube"></i></a>
+        <a href="#" class="social-icon" id="twitter-share"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon" id="instagram-share"><i class="fab fa-instagram"></i></a>
+    </div>
+    
+    
+</div> 
+
+    </main>
+
+
+
+
+    <!-- Modals -->
+    <div id="registerForm" class="modal">
+        <form id="registration" class="modal-content">
+            <span class="close" onclick="toggleModal('registerForm')">&times;</span>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <div id="profileDisplay" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="toggleModal('profileDisplay')">&times;</span>
+            <h2>Profile</h2>
+            <p id="profileUsername">Username:</p>
+            <div class="user-reviews">
+                <!-- User reviews will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
