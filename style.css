@@ -1,4 +1,4 @@
-/* Reset styles */
+/* Reset style*/
 body,
 html {
     margin: 0;
@@ -6,7 +6,7 @@ html {
     font-family: Arial, sans-serif;
 }
 
-/* Header styles */
+/* Header style*/
 header {
     background-color: #333;
     color: #fff;
@@ -35,7 +35,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Hero section styles */
+/* Hero section style*/
 .hero {
     background-image: url('hero-image.jpg');
     background-size: cover;
@@ -72,7 +72,7 @@ nav ul li a {
     cursor: pointer;
 }
 
-/* Movie section styles */
+/* Movie section style*/
 .movies {
     padding: 40px 20px;
     text-align: center;
@@ -95,7 +95,7 @@ nav ul li a {
     border-radius: 8px;
 }
 
-/* Modal styles */
+/* Modal style*/
 .modal {
     display: none;
     position: fixed;
@@ -126,7 +126,7 @@ nav ul li a {
     cursor: pointer;
 }
 
-/* Registration form styles */
+/* Registration form style*/
 .register {
     padding: 40px 20px;
     text-align: center;
@@ -158,24 +158,115 @@ button {
 button:hover {
     background-color: #0056b3;
 }
-/* Social Sharing Icons Styles */
-.share-icons {
+/* General Style*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.hero-banner {
+    background-image: url('hero-banner.jpg'); /* Update with your hero banner image */
+    background-size: cover;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    text-align: center;
+    color: #fff;
 }
 
-.share-icon {
-    display: inline-block;
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.movie-card {
+    border: 1px solid #ccc;
     padding: 10px;
-    margin: 0 10px;
-    color: #007bff; /* Change icon color as needed */
-    cursor: pointer;
 }
 
-.share-icon svg {
-    width: 24px;
-    height: 24px;
-    fill: currentColor; /* Use current text color for SVG fill */
+.movie-news {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.user-profile {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+/* Modal Style*/
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+.contact-us {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-links a {
+    margin: 0 10px;
+}
+
+.contact-links img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.contact-links img:hover {
+    transform: scale(1.2);
 }

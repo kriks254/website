@@ -10,8 +10,6 @@
 
 <body>
     <!-- Header -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
     <header>
         <div class="logo">Movie Website</div>
         <nav>
@@ -25,17 +23,13 @@
     </header>
 
     <!-- Main Content -->
-    <!-- Lazy loading images -->
-<img loading="lazy" src="image.jpg" alt="Image">
-
-<!-- Minimize external requests -->
-<script src="script.js" defer></script>
-
     <main>
         <!-- Hero Banner -->
         <section id="home" class="hero">
             <div class="hero-content">
                 <h1>Welcome to Movie Website</h1>
+                <h2>Explore the Movie Universe</h2>
+            <p>Discover the latest movies, news, and more!</p>
                 <p>Explore the world of movies!</p>
                 <div class="search-bar">
                     <input type="text" id="searchInput" placeholder="Search movies...">
@@ -51,6 +45,15 @@
                 <!-- Movie cards will be dynamically generated here -->
             </div>
         </section>
+         <!-- Movie News Section -->
+    <section id="news" class="movie-news">
+        <div class="container">
+            <h2>Movie News</h2>
+            <div class="news-articles" id="newsArticles">
+                <!-- Latest news articles will be dynamically populated here -->
+            </div>
+        </div>
+    </section>
 
         <!-- Movie Details Modal -->
         <div id="movieDetailsModal" class="modal">
@@ -65,36 +68,26 @@
             <div class="article-list">
                 <!-- Display latest news articles here -->
             </div>
+        </section>
+        <!-- User Profile Section -->
+    <section id="profile" class="user-profile">
+        <div class="container">
+            <h2>User Profile</h2>
+            <div class="profile-details">
+                <!-- User registration, login, and profile information -->
+                <button onclick="openLoginModal()">Login</button>
+            </div>
+        </div>
+    </section>
 
-        </section><!-- Social Sharing Section -->
-<section id="social-sharing" class="social-sharing">
-    <h2>Share This Movie</h2>
-    <!-- Social Sharing Icons -->
-    <!-- Social Sharing Icons (SVG) -->
-<div class="share-icons">
-    <a href="#" onclick="shareOnFacebook()" class="share-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12-12-5.373-12-12 5.373-12 12-12zm3.461 6h-1.345c-.834 0-1.011.352-1.011 1.027v1.597h2.355l-.311 2.329h-2.044v6.278h-2.55v-6.278h-1.809v-2.329h1.809v-1.517c0-2.205 1.349-3.397 3.302-3.397.964 0 1.8.071 2.037.104v1.911z"/>
-        </svg>
-    </a>
-    <a href="#" onclick="shareOnTwitter()" class="share-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M24 4.573c-.883.389-1.832.653-2.828.773 1.014-.609 1.795-1.574 2.164-2.723-.951.562-2.005.971-3.125 1.193-.896-.957-2.176-1.556-3.592-1.556-2.727 0-4.934 2.207-4.934 4.934 0 .388.045.764.13 1.125-4.1-.207-7.735-2.165-10.165-5.155-.426.738-.669 1.598-.669 2.514 0 1.72.875 3.232 2.207 4.116-.814-.025-1.581-.25-2.244-.625v.063c0 2.407 1.707 4.415 3.976 4.871-.416.114-.854.174-1.303.174-.318 0-.625-.029-.927-.083.625 1.924 2.449 3.327 4.607 3.364-1.688 1.318-3.815 2.105-6.117 2.105-.398 0-.789-.024-1.175-.069 2.182 1.397 4.769 2.209 7.555 2.209 9.063 0 14.016-7.513 14.016-14.016 0-.212-.005-.422-.015-.63.962-.699 1.8-1.57 2.453-2.559z"/>
-        </svg>
-    </a>
-</div>
-
-<div class="share-icons">
-    <a href="#" onclick="shareOnFacebook()" class="share-icon"><i class="fab fa-facebook-square"></i></a>
-    <a href="#" onclick="shareOnTwitter()" class="share-icon"><i class="fab fa-twitter-square"></i></a>
-</div>
-
-    <div class="share-icons">
-        <button onclick="shareOnFacebook()">Share on Facebook</button>
-        <button onclick="shareOnTwitter()">Share on Twitter</button>
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeLoginModal()">&times;</span>
+            <h3>Login</h3>
+            <!-- Login form will be implemented here -->
+        </div>
     </div>
-</section>
-
 
         <!-- Registration Form -->
         <section id="register" class="register">
@@ -112,3 +105,26 @@
 </body>
 
 </html>
+
+
+<!-- Contact Us Section -->
+<section id="contact" class="contact-us">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <div class="contact-links">
+            <a href="mailto:info@movieuniverse.com"><img src="email_icon.png" alt="Email"></a>
+            <a href="https://www.facebook.com/movieuniverse" target="_blank"><img src="facebook_icon.png" alt="Facebook"></a>
+            <a href="https://twitter.com/movieuniverse" target="_blank"><img src="twitter_icon.png" alt="Twitter"></a>
+            <!-- Add more social media links/icons as needed -->
+            <!-- Example with additional social media links -->
+<div class="contact-links">
+    <a href="mailto:info@movieuniverse.com"><img src="email_icon.png" alt="Email"></a>
+    <a href="https://www.facebook.com/movieuniverse" target="_blank"><img src="facebook_icon.png" alt="Facebook"></a>
+    <a href="https://twitter.com/movieuniverse" target="_blank"><img src="twitter_icon.png" alt="Twitter"></a>
+    <a href="https://www.instagram.com/movieuniverse" target="_blank"><img src="instagram_icon.png" alt="Instagram"></a>
+    <!-- Add more social media links/icons as needed -->
+</div>
+
+        </div>
+    </div>
+</section>
